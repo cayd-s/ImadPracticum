@@ -1,6 +1,6 @@
 package com.example.imadpracticum
 
-import android.content.Intent
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -8,20 +8,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainScreenActivity : AppCompatActivity() {
-
-    val days = arrayOf<String>("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
-    val temperature = arrayOf<Int>(20, 21, 22, 23, 24, 25, 26)
+class DetailedViewScreen : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main_screen)
-
-        val detailedViewButton = findViewById<android.widget.Button>(R.id.detailedViewButton)
-        detailedViewButton.setOnClickListener {
-            val intent = Intent(this,DetailedViewScreen::class.java)
-            startActivity(intent)
-        }
+        setContentView(R.layout.activity_detailed_view_screen)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -29,11 +21,9 @@ class MainScreenActivity : AppCompatActivity() {
             insets
         }
 
-        val secondExitButton = findViewById<Button>(R.id.secondExitButton)
-        secondExitButton.setOnClickListener {
+        val thirdExitButton = findViewById<Button>(R.id.thirdExitButton)
+        thirdExitButton.setOnClickListener {
             finish()
         }
-
-
     }
 }
