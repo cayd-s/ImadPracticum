@@ -46,6 +46,7 @@
         app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/averageTempTextView"
+        app:layout_constraintVertical_bias="0.736"
         tools:ignore="HardcodedText" />
 
     <Button
@@ -58,6 +59,7 @@
         app:layout_constraintHorizontal_bias="0.223"
         app:layout_constraintStart_toEndOf="@+id/secondExitButton"
         app:layout_constraintTop_toBottomOf="@+id/averageTempTextView"
+        app:layout_constraintVertical_bias="0.736"
         tools:ignore="HardcodedText" />
 
     <Button
@@ -70,6 +72,7 @@
         app:layout_constraintHorizontal_bias="0.597"
         app:layout_constraintStart_toEndOf="@+id/clearButton"
         app:layout_constraintTop_toBottomOf="@+id/averageTempTextView"
+        app:layout_constraintVertical_bias="0.736"
         tools:ignore="HardcodedText" />
 
     <TextView
@@ -113,7 +116,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputDayTextView"
-        app:layout_constraintVertical_bias="0.146" />
+        app:layout_constraintVertical_bias="0.096"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/averageTempTextView"
@@ -124,8 +128,36 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resultTextView"
-        app:layout_constraintVertical_bias="0.275" />
+        app:layout_constraintVertical_bias="0.131"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/getTempButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/averageTempTextView"
+        app:layout_constraintVertical_bias="0.229"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/getAverageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toEndOf="@+id/getTempButton"
+        app:layout_constraintTop_toBottomOf="@+id/averageTempTextView"
+        app:layout_constraintVertical_bias="0.229"
+        tools:ignore="HardcodedText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

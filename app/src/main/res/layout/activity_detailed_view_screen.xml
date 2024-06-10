@@ -60,4 +60,18 @@
         app:layout_constraintTop_toBottomOf="@+id/detailsTextView"
         app:layout_constraintVertical_bias="0.915"
         tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/displayTextView"
+        android:layout_width="369dp"
+        android:layout_height="425dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsTextView"
+        app:layout_constraintVertical_bias="0.157" />
 </androidx.constraintlayout.widget.ConstraintLayout>
